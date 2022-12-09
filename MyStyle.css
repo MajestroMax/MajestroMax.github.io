@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+/* ======== scrollbar ======== */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD05B;
+  border-radius: 10px;
+}
+
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+/* ======== body ========*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-image: url("C:/Users/HP/Desktop/Главные события 21 века/main6.jpg");
+}
+
+header,
+nav,
+section,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======== Menu ========*/
+.header {
+  justify-content: space-between;
+  width: 100%;
+  background-color: #FFD05B;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 4px solid #2C3345;
+  text-decoration-color: #304A61;
+  opacity: .8;
+}
+
+.header_inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px;
+}
+
+.header:hover{
+  transition: 1s;
+  opacity: 1;
+}
+.header:not(:hover){
+  transition: 1s;
+  opacity: 0.8;
+}
+
+ul.hr {
+  margin: 0;
+  padding: 4px;
+  opacity: 1;
+}
+ul.hr li {
+  display: inline;
+  margin: 0 15px;
+  border-radius: 10px;
+  border: 2px solid #304A61;
+  background: white;
+  padding: 5px 10px;
+  transition: 0.2s linear;
+
+}
+/* ======== nav ======== */
+.nav-link {
+  display: flex;
+  vertical-align: top;
+  flex-direction: column;
+  margin: 0 15px;
+  color: #304A61;
+  text-decoration-color: #304A61;
+  border-radius: 10px;
+  border: 2px solid #FFD05B;
+  padding: 5px 10px;
+  transition: 0.2s linear;
+  background: #FFD05B;
+  opacity: .5;
+}
+
+.nav-link:hover{
+  opacity: 1;
+}
+
+/* ======== Hero section ======== */
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.First-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 190px;
+  border-radius: 1vmin;
+}
+
+.box1{
+  align-self: center;
+  order: 1;
+  flex: 1 1 30%;
+  text-align: center
+}
+.box2{
+  align-self: center;
+  order: 1;
+  flex: 1 1 30%;
+  text-align: center
+}
+.box3{
+  align-self:center;
+  order: 1;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.Title{
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #2C3345;
+  background-color: rgba(255,255,255);
+  padding: 5px 10px;
+}
+
+.title1 h1{
+  margin-left: 2.7%;
+  color: #2C3345;
+
+  opacity: 1;
+}
+.title1 p{
+  margin-left: 3.5%;
+  color: #2C3345;
+  opacity: 1;
+}
+
+.back_novel {
+    background-color: #E2F0FB;
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.novel {
+    width: 370px;
+    height: 520px;
+    background: #FFD05B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0px);
+    transition: 0.3s;
+}
+
+.novel:hover {
+   transform: translateY(-30px);
+   transition: 0.3s;
+   background: #FD8469;
+}
+
+.novel p{
+    color: black;
+    text-align:center;
+    padding: 15px;
+    color:#4f545c;
+}
+.novel h1, h2{
+  color: white;
+  text-align:center;
+  padding: 15px;
+}
+.novel:hover p {
+   color: white;
+}
+.novel:hover h1{
+  color:#FFD05B;
+}
+.novel:hover h2{
+  color:#FFD05B;
+}
+
+.buttonP{
+  background: black;
+  color: white;
+}
+.buttonP:hover{
+  border-color: white;
+}
+
+footer {
+  width: 100%;
+  flex-direction: row;
+  background-color: #304A61;
+  color: #fff;
+  height: 30px;
+}
